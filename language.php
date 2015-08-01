@@ -14,7 +14,7 @@ session_start();
 	
 	$query="SELECT * FROM `languages` WHERE `lang` = '".$language."'";
 	
-	$result=mysqli_query($conn, $query) or die('language error: '.mysqli_error());
+	$result=mysqli_query($conn, $query) or die('language error: '.mysql_error());
 	while($array=mysqli_fetch_array($result))
 	{
 		print_r($array);
