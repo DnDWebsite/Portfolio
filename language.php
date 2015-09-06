@@ -3,9 +3,9 @@ session_start();
 
 	$language='';
 
-	if(isset($_SESSION['lang'])){
+	if(isset($_SESSION['lang2'])){
 		
-		$language=$_SESSION['lang'];
+		$language=$_SESSION['lang2'];
 	}
 	else $language='eng';
 	
